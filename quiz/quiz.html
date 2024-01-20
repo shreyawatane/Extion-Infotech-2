@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="quiz.css">
+	<script type="module" src="./script.js" defer></script>
+	<script type="module" src="./questions.js" defer></script>
+	<title>TRIVIA</title>
+</head>
+<body>
+	<div class="welcome-screen">
+		<h1>Welcome to TRIVIA GAME</h1>
+		<button id="start">Start</button>
+	</div>
+
+	<div class="question-screen">
+		<div class="timer-container">
+			Your Time Starts NOW
+		</div>
+
+		<div class="score-box">
+			<div class="score-text">Score</div>
+			<div class="score" id="score">0</div>
+		</div>
+
+		<div class="question" id="question-box">
+			Q1: Who are you?
+		</div>
+
+		<div class="choices">
+			<button class="options" id="0"></button>
+			<button class="options" id="1"></button>
+			<button class="options" id="2"></button>
+		</div>
+
+		<div class="clear-submit-container">
+			<button id="clear">Clear</button>
+			<button id="submit">Submit</button>
+		</div>
+
+
+		<div class="quit"><a href="">
+			<button class="quitter">QUIT</button>
+		</a></div>
+	</div>
+
+	<div class="end-screen">
+		<h1>Thank You for Playing</h1>
+		<div class="end-points">You Scored <div class="points" id="points"> 0 </div> Out of <div class="points" id="total-points"> 0 </div> Points</div>
+		<a href=""><button>Retry</button></a>
+	</div>
+</body>
+</html>
